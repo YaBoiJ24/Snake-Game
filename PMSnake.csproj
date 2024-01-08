@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Body.png" />
+    <None Remove="Assets\DeadBody.png" />
+    <None Remove="Assets\DeadHead.png" />
+    <None Remove="Assets\DroidSansMono.ttf" />
+    <None Remove="Assets\Empty.png" />
+    <None Remove="Assets\face.png" />
+    <None Remove="Assets\fence.png" />
+    <None Remove="Assets\Food.png" />
+    <None Remove="Assets\game-over.wav" />
+    <None Remove="Assets\Head.png" />
+    <None Remove="Assets\icon.ico" />
+    <None Remove="Assets\steak.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\game-over.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Body.png" />
+    <Resource Include="Assets\DeadBody.png" />
+    <Resource Include="Assets\DeadHead.png" />
+    <Resource Include="Assets\DroidSansMono.ttf" />
+    <Resource Include="Assets\Empty.png" />
+    <Resource Include="Assets\face.png" />
+    <Resource Include="Assets\fence.png" />
+    <Resource Include="Assets\Food.png" />
+    <Resource Include="Assets\Head.png" />
+    <Resource Include="Assets\icon.ico" />
+    <Resource Include="Assets\steak.png" />
+  </ItemGroup>
+
+</Project>

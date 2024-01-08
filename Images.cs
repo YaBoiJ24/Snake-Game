@@ -1,0 +1,22 @@
+﻿using System;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+
+namespace PMSnake
+{
+    public static class Images
+    {
+        public readonly static ImageSource Empty = LoadImage("Empty.png");
+        public readonly static ImageSource Body = LoadImage("Body.png");
+        public readonly static ImageSource Head = LoadImage("face.png");
+        public readonly static ImageSource Food = LoadImage("steak.png");
+        public readonly static ImageSource DeadBody = LoadImage("DeadBody.png");
+        public readonly static ImageSource DeadHead = LoadImage("DeadHead.png");
+        public readonly static ImageSource Wall = LoadImage("fence.png");
+        private static ImageSource LoadImage(string filename)
+        {
+            return new BitmapImage(new Uri($"Assets/{filename}", 
+                UriKind.Relative));
+        }
+    }
+}
